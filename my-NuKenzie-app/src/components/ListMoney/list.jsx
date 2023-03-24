@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 
 export function List({ listTransactions, setListTransactions }) {
-  console.log(setListTransactions);
+  
   const removeCard = (cardId) => {
     const newCard = listTransactions.filter(
       (listTransactions) => listTransactions.id !== cardId
