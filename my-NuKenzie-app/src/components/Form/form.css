@@ -1,0 +1,182 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    border: 1px solid #00000033;
+
+    width: 90vw;
+
+    margin: 30px auto;
+    padding: 15px;
+    gap: 15px;
+}
+
+
+form>label {
+    margin-left: 10px;
+}
+
+form>input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 16px;
+    gap: 10px;
+
+    border-radius: 8px;
+    border: 2px solid #F8F9FA;
+
+    background-color: #F8F9FA;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+}
+
+
+select {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 16px;
+    gap: 10px;
+
+    border-radius: 8px;
+    border: 2px solid #F8F9FA;
+
+    background-color: #F8F9FA;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+}
+
+
+form>button {
+    width: 100%;
+    height: 52px;
+
+    color: #FFFFFF;
+    background-color: #FD377E;
+
+    border: #FD377E;
+    border-radius: 8px;
+
+    margin: 15px auto 0 auto;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+form>p {
+    font-size: 14px;
+    line-height: 22px;
+
+    margin-left: 10px;
+
+    color: #212529;
+}
+
+
+form>small {
+    color: #868E96;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.subDiv-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.totalMoney {
+    position: relative;
+
+    width: 100%;
+
+    padding: 25px;
+
+    background-color: #E9ECEF;
+
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+}
+
+
+.totalMoney>p {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    color: #FD377E;
+    font-weight: 700;
+    line-height: 30px;
+
+}
+
+.subDiv-totalMoney {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+}
+
+.subDiv-totalMoney>p {
+    font-weight: 700;
+}
+
+.subDiv-totalMoney>span {
+    font-size: 12px;
+    line-height: 22px;
+    color: #343a40;
+}
+
+@media(min-width:769px) {
+     .container{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+
+        gap: 55px;
+       
+     }
+
+
+     .subDiv-container{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+
+     .div-form{
+        width: 100%;
+     }
+
+     form{
+        width: 100%;
+        height: 500px;
+     }
+
+
+} 
