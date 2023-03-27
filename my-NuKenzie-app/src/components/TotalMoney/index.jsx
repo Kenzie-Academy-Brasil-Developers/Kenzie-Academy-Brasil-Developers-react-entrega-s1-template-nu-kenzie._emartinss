@@ -18,7 +18,7 @@ export function TotalMoney({listTransactions}){
             <span>O valor se refere ao saldo</span>
             </div>
             
-            <p>{`${totalMoney.toLocaleString("pt-BR")}.00`}</p>
+            <p>{`R$ ${totalMoney.toLocaleString("pt-BR")}.00`}</p>
         </div>
     )
 }

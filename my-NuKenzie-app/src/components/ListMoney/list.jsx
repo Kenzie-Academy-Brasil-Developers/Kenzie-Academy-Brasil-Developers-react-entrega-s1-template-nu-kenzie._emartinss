@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 
+
+
 export function List({ listTransactions, setListTransactions }) {
   
   const removeCard = (cardId) => {
@@ -8,6 +10,7 @@ export function List({ listTransactions, setListTransactions }) {
     );
     setListTransactions(newCard);
   };
+
   return (
     <>
       <div className="financial-summary">
@@ -17,7 +20,7 @@ export function List({ listTransactions, setListTransactions }) {
           <ul className="ul-list-cards">
             {listTransactions.map((prop) => {
               return (
-                <li id={uuidv4()} key={uuidv4()}>
+                <li className={prop.type === 'Despesa' ? 'despesa' : 'entrada'} id={uuidv4()} key={uuidv4()}>
                   <p>{prop.description}</p>
                   <small>{prop.type}</small>
                   <span>{`R$${prop.listMoney.toLocaleString("pt-BR")}`}</span>

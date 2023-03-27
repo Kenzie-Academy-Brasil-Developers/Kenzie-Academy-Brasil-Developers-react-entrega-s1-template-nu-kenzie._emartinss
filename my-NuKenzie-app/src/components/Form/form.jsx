@@ -13,12 +13,18 @@ export function Form({ listTransactions, setListTransactions }) {
     formData.id = uuidv4();
     formData.listMoney = Number(formData.listMoney);
     setListTransactions([...listTransactions, formData]);
+    
+    setFormData({
+      description: "",
+      listMoney: "",
+      type: "",
+    });
   };
   const isEmpty = formData.description === "" || formData.listMoney === "" || formData.type === "" || formData.type === 'Selecionar';
   return (
     <>
       <div className="div-form">
-        <form onSubmit={submit}>
+        <form onSubmit={submit} >
           <p>Descrição</p>
 
           <input

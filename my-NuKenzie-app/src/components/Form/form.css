@@ -111,8 +111,6 @@ form>small {
 
     padding: 25px;
 
-    background-color: #E9ECEF;
-
     border: 1px solid #E9ECEF;
     border-radius: 4px;
 }
@@ -144,7 +142,10 @@ form>small {
 .subDiv-totalMoney>span {
     font-size: 12px;
     line-height: 22px;
+   
     color: #343a40;
+
+    margin-top: 15px;
 }
 
 @media(min-width:769px) {
